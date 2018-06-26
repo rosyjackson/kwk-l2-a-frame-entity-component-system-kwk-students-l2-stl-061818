@@ -4,20 +4,21 @@
   </head>
 
   <body>
-
+    
     <a-scene light="defaultLightsEnabled: false">
 
       <!-- light source element -->
-      
-      <a-entity light="type: ambient" position="0 0 15" color="red"></a-entity> 
+      <!-- <a-entity light="type: ambient"></a-entity> -->
 
       <!-- our camera aka user perspective element -->
-      <!--<a-entity position="0 0 15"></a-entity> 
+      <a-entity camera look-controls wasd-controls position="0 0 15"></a-entity> 
 
       <!-- our initial sphere in the center of the scene -->
       <!-- your sphere here! -->
+      
+        <a-sphere position="0 0 0" radius="2" color="pink"></a-sphere>
 
-    </a-scene>
+
 
     <script src="./index.js"></script>
   </body>
